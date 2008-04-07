@@ -1,0 +1,10 @@
+<h1>Editing product</h1>
+
+<%= error_messages_for :product %>
+
+<% form_for(@product) do |f| %>
+	<%= render :partial => "form", :locals => { :f => f, :button_text => "Update" } %>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>
